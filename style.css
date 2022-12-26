@@ -1,0 +1,542 @@
+body {
+    position: relative;
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.main-title {
+    font-size: 90px;
+
+    font-family: fantasy;
+    color: aliceblue;
+    left: 20px;
+    top: 190px;
+    font-weight: 900px;
+
+
+}
+
+.header-right {
+    width: 500px;
+}
+
+.header-right ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.header-right:hover {
+    color: rgb(6, 102, 59);
+    cursor: cell;
+}
+
+header li {
+
+    font-family: 'Satisfy', cursive;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+section.kv {
+    height: 100vh;
+    background-image: url(_DSC5776.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 569px) {
+    .section.kv {
+    display: flex;
+
+    }
+}
+
+
+.sub-title {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(192, 192, 192, 0.425);
+    font-size: 20px;
+    font-family: serif;
+}
+
+.contents {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.me {
+    display: flex;
+    justify-content: space-around;
+}
+
+.me sub {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+.me img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .me img {
+        margin-left: 50px;
+
+    }
+
+}
+
+
+main p {
+    font-size: 30px;
+    font-family: monospace;
+    border: dotted 2px rgb(146, 113, 71);
+    justify-content: flex-end;
+
+
+}
+
+.loading {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .loading::after {
+    border-radius: 40%;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      #ee88aa,
+      rgba(250, 238, 255, 0.3) 90%,
+      rgba(230, 238, 255, 0.5)
+    );
+    animation: color-fade 3s infinite linear;
+  }
+  .circle1,
+  .circle2,
+  .circle3 {
+    opacity: 0.4;
+    position: absolute;
+    background: #0af;
+    width: 100px;
+    height: 100px;
+    transform-origin: 50% 47%;
+    border-radius: 40%;
+    animation: rotation 3s infinite linear;
+  }
+  .circle2 {
+    opacity: 0.2;
+    background: #ff0;
+    animation: rotation 5s infinite linear;
+  }
+  .circle3 {
+    animation: rotation 2.5s infinite linear;
+  }
+  .title {
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    letter-spacing: 0.15em;
+    animation: text-fade 300ms infinite linear;
+  }
+  /* 回転アニメーション */
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* ピンク色の背景のアニメーション */
+  @keyframes color-fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  /* 点滅のアニメーション */
+  @keyframes text-fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    75% {
+      opacity: 0.6;
+    }
+  }
+
+#gallery {
+
+    display: flex;
+    padding-top: 30px;
+
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.container2 {
+    flex-direction: row;
+    margin: 10px 15px;
+
+}
+
+.text {
+
+    color: rgb(133, 69, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .2rem;
+
+}
+
+
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.267);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 0 10px;
+}
+
+#plan.block-section {
+    width: 100%;
+
+}
+
+figure img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-decoration-color: black;
+
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgba(104, 78, 57, 0.645);
+    object-fit: cover;
+    transition: 1s all;
+
+}
+
+#contact {
+    border: solid 10px rgba(128, 128, 128, 0.573);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.form-control,
+textarea {
+    max-width: 400px;
+    color: rgb(206, 118, 29);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration-color: black;
+}
+
+.send-button {
+    background-color: rgba(128, 128, 128, 0.573);
+    margin-top: 15px;
+    height: 34px;
+    width: 300px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+    max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: rgb(10, 1, 1);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+}
+
+
+/* main page */
+@media screen and (max-width:767px) {
+    .me {
+        display: block;
+    }
+
+    .main-title {
+
+        font-size: 40px;
+    }
+
+    .header-left {
+        width: 80%;
+        max-width: 170px;
+        min-width: 100px;
+        margin-top: 5%;
+    }
+
+    .header-right {
+        display: block;
+    }
+
+
+}
+
+
+    
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 569px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .direct-contact-container,
+    .form-horizontal {
+        margin: 0 auto;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .form-control,
+    textarea {
+
+        margin: 0 auto;
+    }
+
+
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }
+
+    /* .social-media-list {
+        left: 0;
+    }
+
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    } */
+
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}
+
+
+/* .example img {
+    transition: .3s;
+  }
+  
+  /*ホバー時に透明度50%*/
+/* .example img:hover {
+    opacity: 0.5;
+  } */
+
+
+
+p.caption {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
