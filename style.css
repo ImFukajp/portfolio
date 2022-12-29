@@ -27,6 +27,11 @@ header {
 
 }
 
+.title {
+    position: fixed;
+
+}
+
 .header-right {
     width: 500px;
 }
@@ -67,7 +72,7 @@ section.kv {
 
 @media screen and (max-width: 569px) {
     .section.kv {
-    display: flex;
+        display: flex;
 
     }
 }
@@ -123,28 +128,28 @@ main p {
 
 }
 
-.loading {
+.totop {
     position: relative;
     width: 100px;
     height: 100px;
-  }
-  .loading::after {
+}
+
+.totop::after {
     border-radius: 40%;
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      to bottom,
-      #ee88aa,
-      rgba(250, 238, 255, 0.3) 90%,
-      rgba(230, 238, 255, 0.5)
-    );
+    background: linear-gradient(to bottom,
+            #ee88aa,
+            rgba(250, 238, 255, 0.3) 90%,
+            rgba(230, 238, 255, 0.5));
     animation: color-fade 3s infinite linear;
-  }
-  .circle1,
-  .circle2,
-  .circle3 {
+}
+
+.circle1,
+.circle2,
+.circle3 {
     opacity: 0.4;
     position: absolute;
     background: #0af;
@@ -153,17 +158,21 @@ main p {
     transform-origin: 50% 47%;
     border-radius: 40%;
     animation: rotation 3s infinite linear;
-  }
-  .circle2 {
+}
+
+.circle2 {
     opacity: 0.2;
     background: #ff0;
     animation: rotation 5s infinite linear;
-  }
-  .circle3 {
+}
+
+.circle3 {
     animation: rotation 2.5s infinite linear;
-  }
-  .title {
+}
+
+.totop title {
     position: absolute;
+
     top: 33px;
     width: 100%;
     z-index: 1;
@@ -173,40 +182,48 @@ main p {
     line-height: 2rem;
     letter-spacing: 0.15em;
     animation: text-fade 300ms infinite linear;
-  }
-  /* 回転アニメーション */
-  @keyframes rotation {
+}
+
+/* 回転アニメーション */
+@keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  /* ピンク色の背景のアニメーション */
-  @keyframes color-fade {
+}
+
+/* ピンク色の背景のアニメーション */
+@keyframes color-fade {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     50% {
-      opacity: 0.7;
+        opacity: 0.7;
     }
-  }
-  /* 点滅のアニメーション */
-  @keyframes text-fade {
+}
+
+/* 点滅のアニメーション */
+@keyframes text-fade {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     25% {
-      opacity: 0.8;
+        opacity: 0.8;
     }
+
     50% {
-      opacity: 0.9;
+        opacity: 0.9;
     }
+
     75% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
-  }
+}
 
 #gallery {
 
@@ -328,6 +345,9 @@ textarea {
     letter-spacing: 1px;
     font-weight: bold;
     text-decoration-color: black;
+    border: solid 1px rgb(46, 46, 46);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
 }
 
 .send-button {
@@ -429,7 +449,7 @@ textarea {
 }
 
 
-    
+
 
 .copyright {
     font: 200 14px 'Oswald', sans-serif;
